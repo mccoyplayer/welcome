@@ -21,8 +21,9 @@ function Home() {
             <h1 style={{marginBottom: "0"}}>Welcome</h1>
             <h1>To The <FaPersonWalkingArrowLoopLeft/> Project</h1>
             <p>
-                Dive into an array of endless loading screens. Sit back, relax, and enjoy the hypnotic visuals. Toggle
-                fullscreen mode with the <strong>F</strong> key and exit with <strong>Esc</strong>.
+                Dive into an array of endless loading screens. Sit back, relax, and enjoy the hypnotic visuals.
+                {isMobile ? '' :
+                'Toggle fullscreen mode with the <strong>F</strong> key and exit with <strong>Esc</strong>.' }
             </p>
             <p>
                 <strong>Note:</strong> Fullscreen mode is optimized for the loading screens and may not function on this

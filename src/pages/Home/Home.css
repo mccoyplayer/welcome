@@ -107,6 +107,10 @@ body {
         max-width: 100%;
     }
 
+    .home-container h1, .home-container p, .platform-icons, .social-links {
+        transform: translate(0%, -5vh);
+    }
+
     .home-container h1 {
         /* Adjust font size and line height */
         font-size: calc(3.2vh + 3.2vw);
@@ -116,6 +120,7 @@ body {
 
         /* Custom positioning */
         position: relative; /* or 'absolute' depending on your needs */
+        transform: translate(0%, -5vh);
     }
 
     .home-container p {
