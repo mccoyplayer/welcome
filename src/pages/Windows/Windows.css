@@ -9,10 +9,11 @@
   align-items: center;
   justify-content: center;
   /*background-image: url('../../assets/image/windows-loading.png'); !* Path to your image *!*/
-  background-color: rgba(51, 118, 209, 1);
-  background-size: cover; /* Cover the entire container */
+  background-color: rgba(51, 118, 209, 1); /* Background color */
+  background-size: contain; /* Scale the image to fit the container */
   background-position: center; /* Center the image */
-  height: 100vh;
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  height: 100vh; /* Full height of the viewport */
   color: white;
   position: relative;
 }
@@ -108,8 +109,8 @@
 
 .windows-loader .windows-loader-circle {
   position: absolute;
-  width: 39px;
-  height: 39px;
+  width: 4vh;
+  height: 4vh;
   opacity: 0;
   transform: rotate(225deg);
   animation-iteration-count: infinite;
@@ -121,25 +122,25 @@
 .windows-loader .windows-loader-circle:after {
   content: '';
   position: absolute;
-  width: 6px;
-  height: 6px;
+  width: 0.6vh;
+  height: 0.6vh;
   border-radius: 5px;
   background: #fff;
   box-shadow: 0 0 9px rgba(255, 255, 255, .7);
 }
 
 .windows-loader .windows-loader-circle:nth-child(2) {
-  animation-delay: 240ms;
+  animation-delay: 280ms;
 }
 .windows-loader .windows-loader-circle:nth-child(3) {
-  animation-delay: 480ms;
+  animation-delay: 510ms;
 }
 .windows-loader .windows-loader-circle:nth-child(4) {
-  animation-delay: 720ms;
+  animation-delay: 750ms;
 }
 
 .windows-loader .windows-loader-circle:nth-child(5) {
-  animation-delay: 960ms;
+  animation-delay: 990ms;
 }
 
 .windows-loader {
