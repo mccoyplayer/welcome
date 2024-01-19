@@ -203,7 +203,7 @@ function Layout({children}) {
                 </ul>
             </div>
 
-            {!isFullScreen && <AnimatedCursor {...cursorConfig} />}
+            {!isMobile && !isFullScreen && <AnimatedCursor {...cursorConfig} />}
 
             <TransitionGroup>
                 <CSSTransition
