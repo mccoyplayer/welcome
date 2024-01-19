@@ -1,0 +1,40 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  background: linear-gradient(135deg, #6e8efb, #a777e3); /* Gradient background */
+  color: #fff; /* White text color */
+  text-align: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.home-container h1 {
+  font-size: 3em; /* Large, prominent heading */
+  margin-bottom: 20px;
+}
+
+.home-container p {
+  font-size: 1.5em;
+  line-height: 1.6;
+  max-width: 600px; /* Max width for readability */
+  margin-bottom: 10px;
+}
+
+/* For smaller screens */
+@media (max-width: 600px) {
+  .home-container {
+    width: calc(100vw - 20px);
+    height: calc(100vh - 20px);
+  }
+
+  .home-container h1 {
+    font-size: 2em;
+  }
+
+  .home-container p {
+    font-size: 1.2em;
+  }
+}

@@ -1,0 +1,184 @@
+/* Windows.css */
+.hidden {
+  display: none; /* Hide the element */
+}
+
+.windows-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /*background-image: url('../../assets/image/windows-loading.png'); !* Path to your image *!*/
+  background-color: rgba(47, 110, 185, 1);
+  background-size: cover; /* Cover the entire container */
+  background-position: center; /* Center the image */
+  height: 100vh;
+  color: white;
+  position: relative;
+}
+
+.windows-logo {
+  position: absolute; /* Allows for custom positioning */
+  bottom: 37%; /* Example position, change as needed */
+  font-size: 13vh;
+  /*font-size: calc(5vh + 5vw); !* Adjust the size of the icon *!*/
+  color: whitesmoke;
+}
+
+.loader-container {
+  position: absolute;
+  bottom: 19.3vh; /* Position from the bottom */
+  left: 40.95%; /* Start from the far left */
+  width: 17.95%; /* Width of the container */
+  height: 1.1vh; /* Height of the loader line */
+  background-color: dimgrey; /* Background color of the container */
+  border-radius: 2vh; /* No border radius for the container */
+  overflow: hidden; /* Ensures the inner loader doesn't overflow */
+}
+
+.windows-loader {
+  height: 100%; /* Full height of the container */
+  width: 0%; /* Initial width set to zero */
+  transition: width 10s linear; /* Transition for width change */
+}
+
+.windows-loader-text-one {
+  position: absolute;
+  top: 41.4vh; /* Position from the bottom */
+  font-size: 2.1vh; /* Adjust the font size */
+  left: 0; /* Start from the far left */
+  width: 100%; /* Width of the container */
+  text-align: center; /* Center the text */
+  color: whitesmoke; /* Color of the text */
+}
+
+.windows-loader-text-two {
+  position: absolute;
+  top: 44.5vh; /* Position from the bottom */
+  font-size: 2.1vh; /* Adjust the font size */
+  left: 0; /* Start from the far left */
+  width: 100%; /* Width of the container */
+  text-align: center; /* Center the text */
+  color: whitesmoke; /* Color of the text */
+}
+
+.windows-loader-text-three {
+  position: absolute;
+  top: 47.5vh; /* Position from the bottom */
+  font-size: 2.1vh; /* Adjust the font size */
+  left: 0; /* Start from the far left */
+  width: 100%; /* Width of the container */
+  text-align: center; /* Center the text */
+  color: whitesmoke; /* Color of the text */
+}
+
+.windows-loader-text-four {
+  position: absolute;
+  bottom: 1.5vh; /* Position from the bottom */
+  font-size: 2.1vh; /* Adjust the font size */
+  left: 0; /* Start from the far left */
+  width: 100%; /* Width of the container */
+  text-align: center; /* Center the text */
+  color: whitesmoke; /* Color of the text */
+}
+
+@keyframes loadAnimation {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%; /* Extend to full width */
+  }
+}
+
+/* loader */
+@keyframes bgg {
+  0% { background: rgba(0, 153, 255, 1); }
+  50% { background: rgba(41, 255, 121, 1); }
+  100% { background: rgba(255, 74, 88, 1); }
+}
+
+.windows-loader {
+  position: absolute;
+  transform: translateX(-50%) translateY(-50%);
+  margin: auto;
+  top: 3vh;
+  right: 2vh;
+}
+
+.windows-loader .windows-loader-circle {
+  position: absolute;
+  width: 39px;
+  height: 39px;
+  opacity: 0;
+  transform: rotate(225deg);
+  animation-iteration-count: infinite;
+  animation-name: orbit;
+  animation-duration: 5.5s;
+  bottom: 25vh;
+}
+
+.windows-loader .windows-loader-circle:after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 0 0 9px rgba(255, 255, 255, .7);
+}
+
+.windows-loader .windows-loader-circle:nth-child(2) {
+  animation-delay: 240ms;
+}
+.windows-loader .windows-loader-circle:nth-child(3) {
+  animation-delay: 480ms;
+}
+.windows-loader .windows-loader-circle:nth-child(4) {
+  animation-delay: 720ms;
+}
+
+.windows-loader .windows-loader-circle:nth-child(5) {
+  animation-delay: 960ms;
+}
+
+.windows-loader {
+  position: absolute;
+}
+
+@keyframes orbit {
+  0% {
+    transform: rotate(225deg);
+    opacity: 1;
+    animation-timing-function: ease-out;
+  }
+  7% {
+    transform: rotate(345deg);
+    animation-timing-function: linear;
+  }
+  30% {
+    transform: rotate(455deg);
+    animation-timing-function: ease-in-out;
+  }
+  39% {
+    transform: rotate(690deg);
+    animation-timing-function: linear;
+  }
+  70% {
+    transform: rotate(815deg);
+    opacity: 1;
+    animation-timing-function: ease-out;
+  }
+  75% {
+    transform: rotate(945deg);
+    animation-timing-function: ease-out;
+  }
+  76% {
+    transform: rotate(945deg);
+    opacity: 0;
+  }
+  100% {
+    transform: rotate(945deg);
+    opacity: 0;
+  }
+}
