@@ -128,7 +128,7 @@ function Layout({ children }) {
         setCursorColor('255, 255, 255'); // White for DVD
         break;
       case '/windows':
-        setCursorColor('0, 55, 255'); // Blue for Windows
+        setCursorColor('51, 118, 209'); // Blue for Windows
         break;
       case '/dvd':
         setCursorColor('255, 255, 255'); // White for DVD Logo

@@ -20,21 +20,26 @@
 
 .apple-logo {
   position: absolute; /* Allows for custom positioning */
-  bottom: 45%; /* Example position, change as needed */
-  font-size: 13vh;
   /*font-size: calc(5vh + 5vw); !* Adjust the size of the icon *!*/
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Adjusts the position to truly center the logo */
+  font-size: 13vh; /* Adjust as needed */
   color: whitesmoke;
 }
 
 .loader-container {
   position: absolute;
-  top: 60vh; /* Position from the bottom */
-  left: 40.95%; /* Start from the far left */
   width: 17.95%; /* Width of the container */
   height: 1.1vh; /* Height of the loader line */
   background-color: dimgrey; /* Background color of the container */
   border-radius: 2vh; /* No border radius for the container */
   overflow: hidden; /* Ensures the inner loader doesn't overflow */
+  bottom: 45%;
+  left: 50%;
+  transform: translate(0%, +30vh); /* Adjusts the position to truly center the logo */
+  font-size: 13vh; /* Adjust as needed */
+  color: whitesmoke;
 }
 
 .loader {
@@ -46,8 +51,9 @@
 
 .loader-text {
   position: absolute;
-  top: 60.5vh; /* Position from the bottom */
-  left: 0; /* Start from the far left */
+  bottom: 45%;
+  left: 50%;
+  transform: translate(0%, +30.1vh);
   width: 100%; /* Width of the container */
   text-align: center; /* Center the text */
   font-size: 1.4vh; /* Adjust the font size */
