@@ -119,7 +119,7 @@ function Layout({ children }) {
 
     // Update current location for next render
     setCurrentLocation(nextLocation);
-  }, [location.pathname, currentLocation]);
+  }, [location.pathname]);
 
   const [cursorColor, setCursorColor] = useState('123, 12, 23');
   useEffect(() => {

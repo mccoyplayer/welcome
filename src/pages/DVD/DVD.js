@@ -28,7 +28,7 @@ function DVD( ) {
     startAnimation(0);
     const interval = setInterval(restartAnimation, 11000);
     return () => clearInterval(interval);
-  });
+  }, [restartAnimation]);
 
   const [textIndex, setTextIndex] = useState(0);
 
