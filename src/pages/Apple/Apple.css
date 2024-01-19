@@ -82,11 +82,16 @@ body {
         overflow: hidden; /* Prevents scrolling on the entire page */
     }
 
+    .apple-logo {
+        transform: translate(-50%, -10vh); /* Adjusts the position to truly center the logo */
+    }
+
     .loader-container {
-        transform: translate(0%, -50%);
+        transform: translate(0%, -8vh);
+        width: 10vh;
     }
 
     .loader-text {
-        transform: translate(0%, -50%);
+        transform: translate(0%, -7.5vh);
     }
 }

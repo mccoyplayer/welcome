@@ -59,6 +59,17 @@ function Windows() {
         };
     }, [textIndex, changeText]);
 
+    const [isMobile, setIsMobile] = useState(window.innerWidth < 600);
+
+    useEffect(() => {
+        const handleResize = () => {
+            setIsMobile(window.innerWidth < 600);
+        };
+
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
+
     return (
         <div className="windows-container">
             <div className="windows-logo">
@@ -77,10 +88,15 @@ function Windows() {
                 <p>{Math.min(loadPercent.toFixed(0), 100)}% Complete</p>
             </div>
             <div className="windows-loader-text-three">
-                <p>Don't turn off your computer</p>
+                <p>Don't turn off your
+                {isMobile ? ' mobile ' : ' computer '}
+                </p>
             </div>
             <div className="windows-loader-text-four">
-                <p>Your PC will restart several times</p>
+                <p>Your
+                    {isMobile ? ' mobile ' : ' PC '}
+                    will restart several times
+                </p>
             </div>
         </div>
     );
