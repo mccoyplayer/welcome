@@ -1,0 +1,68 @@
+.notfound-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.85); /* Darker background for contrast */
+    backdrop-filter: blur(15px); /* Increased blur effect */
+    color: white;
+}
+
+.notfound-header {
+    margin-bottom: 30px;
+}
+
+.notfound-content {
+    background: rgba(255, 255, 255, 0.1); /* Slight background for content */
+    padding: 40px;
+    border-radius: 15px; /* Rounded corners for content box */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5); /* Deeper shadow for depth */
+}
+
+.notfound-content h1 {
+    font-size: 120px;
+    line-height: 1;
+    margin: 0;
+    color: #007bff; /* Blue color for the number 404 */
+}
+
+.notfound-content h2 {
+    font-size: 28px;
+    margin: 10px 0;
+}
+
+.notfound-content p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.home-link {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.home-link:hover {
+    background-color: #0056b3;
+}
+
+@media only screen and (max-width: 600px) {
+    .notfound-content h1 {
+        font-size: 60px;
+    }
+
+    .notfound-content h2 {
+        font-size: 22px;
+    }
+
+    .notfound-content {
+        width: 90%; /* Adjust width for mobile */
+        padding: 20px; /* Less padding on mobile */
+    }
+}

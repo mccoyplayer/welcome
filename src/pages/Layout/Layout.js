@@ -7,7 +7,7 @@ import {faApple, faWindows} from '@fortawesome/free-brands-svg-icons';
 import {faExpandArrowsAlt} from '@fortawesome/free-solid-svg-icons';
 import {CSSTransition, TransitionGroup} from 'react-transition-group';
 
-function Layout({children}) {
+function Layout({ children, isNotFound }) {
     const location = useLocation();
 
     useEffect(() => {
@@ -160,48 +160,50 @@ function Layout({children}) {
 
     return (
         <div className="layout-background">
-            <div className="navbar" style={{display: (isMobile || isFullScreen) ? 'none' : 'flex'}}>
-                <ul>
-                    <li><NavLink to="/"
-                                 className={isActive('/') ? 'nav-link nav-link-active' : 'nav-link'}>Home</NavLink></li>
+            {!isNotFound && (
+                <div className="navbar" style={{display: (isMobile || isFullScreen) ? 'none' : 'flex'}}>
+                    <ul>
+                        <li><NavLink to="/"
+                                     className={isActive('/') ? 'nav-link nav-link-active' : 'nav-link'}>Home</NavLink></li>
 
-                    {/* DVD NavLink */}
-                    <li>
-                        <NavLink to="/apple"
-                                 className={isActive('/apple') ? 'nav-link nav-link-active apple-link' : 'nav-link apple-link'}>
-                            <FontAwesomeIcon icon={faApple} className="nav-icon"/>
-                            Apple
-                        </NavLink>
-                    </li>
-
-                    {/* Windows NavLink */}
-                    <li>
-                        <NavLink to="/windows"
-                                 className={isActive('/windows') ? 'nav-link nav-link-active windows-link' : 'nav-link windows-link'}>
-                            <FontAwesomeIcon icon={faWindows} className="nav-icon"/>
-                            Windows
-                        </NavLink>
-                    </li>
-
-                    {/* DVD Logo NavLink */}
-                    {/*<li>*/}
-                    {/*  <NavLink to="/dvd" className={isActive('/dvd') ? 'nav-link nav-link-active dvd-link' : 'nav-link dvd-link'}>*/}
-                    {/*    <img src={dvdLogo} alt="DVD Logo" className="nav-icon"/> /!* Add this line *!/*/}
-                    {/*    DVD Logo*/}
-                    {/*  </NavLink>*/}
-                    {/*</li>*/}
-
-                    {/* Full Screen NavLink */}
-                    {showFullScreenLink && (
-                        <li className={linkTransition}>
-                            <NavLink onClick={toggleFullScreen} className='nav-link fullscreen-link'>
-                                <FontAwesomeIcon icon={faExpandArrowsAlt} className="nav-icon"/>
-                                Full Screen
+                        {/* DVD NavLink */}
+                        <li>
+                            <NavLink to="/apple"
+                                     className={isActive('/apple') ? 'nav-link nav-link-active apple-link' : 'nav-link apple-link'}>
+                                <FontAwesomeIcon icon={faApple} className="nav-icon"/>
+                                Apple
                             </NavLink>
                         </li>
-                    )}
-                </ul>
-            </div>
+
+                        {/* Windows NavLink */}
+                        <li>
+                            <NavLink to="/windows"
+                                     className={isActive('/windows') ? 'nav-link nav-link-active windows-link' : 'nav-link windows-link'}>
+                                <FontAwesomeIcon icon={faWindows} className="nav-icon"/>
+                                Windows
+                            </NavLink>
+                        </li>
+
+                        {/* DVD Logo NavLink */}
+                        {/*<li>*/}
+                        {/*  <NavLink to="/dvd" className={isActive('/dvd') ? 'nav-link nav-link-active dvd-link' : 'nav-link dvd-link'}>*/}
+                        {/*    <img src={dvdLogo} alt="DVD Logo" className="nav-icon"/> /!* Add this line *!/*/}
+                        {/*    DVD Logo*/}
+                        {/*  </NavLink>*/}
+                        {/*</li>*/}
+
+                        {/* Full Screen NavLink */}
+                        {showFullScreenLink && (
+                            <li className={linkTransition}>
+                                <NavLink onClick={toggleFullScreen} className='nav-link fullscreen-link'>
+                                    <FontAwesomeIcon icon={faExpandArrowsAlt} className="nav-icon"/>
+                                    Full Screen
+                                </NavLink>
+                            </li>
+                        )}
+                    </ul>
+                </div>
+            )}
 
             {!isMobile && !isFullScreen && <AnimatedCursor {...cursorConfig} />}
 

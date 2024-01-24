@@ -1,24 +1,23 @@
-// App.js
 import React from 'react';
-import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
-import Home from './pages/Home/Home'; // Adjust the path if your folder structure is different
+import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
+import Home from './pages/Home/Home';
 import Apple from "./pages/Apple/Apple";
 import Windows from "./pages/Windows/Windows";
-import Layout from "./pages/Layout/Layout";
 import DVD from "./pages/DVD/DVD";
+import NotFoundPage from "./pages/404Page/404Page";
+import Layout from "./pages/Layout/Layout";
 
 function App() {
     return (
         <Router>
-            <Layout>
-                <Routes>
-                    {/* Main page routers */}
-                    <Route path="/" element={<Home/>}/>
-                    <Route path="/apple" element={<Apple/>}/>
-                    <Route path="/windows" element={<Windows/>}/>
-                    <Route path="/dvd" element={DVD}/>
-                </Routes>
-            </Layout>
+            <Routes>
+                <Route path="/" element={<Layout isNotFound={false}><Home/></Layout>}/>
+                <Route path="/apple" element={<Layout isNotFound={false}><Apple/></Layout>}/>
+                <Route path="/windows" element={<Layout isNotFound={false}><Windows/></Layout>}/>
+                <Route path="/dvd" element={<Layout isNotFound={false}><DVD/></Layout>}/>
+                {/* 404 Not Found route */}
+                <Route path="*" element={<Layout isNotFound={true}><NotFoundPage/></Layout>}/>
+            </Routes>
         </Router>
     );
 }
