@@ -120,7 +120,7 @@ function Layout({children}) {
         setCurrentLocation(nextLocation);
     }, [location.pathname]);
 
-    const [cursorColor, setCursorColor] = useState('123, 12, 23');
+    const [cursorColor, setCursorColor] = useState('256, 256, 256');
     useEffect(() => {
         switch (location.pathname) {
             case '/apple':
@@ -133,7 +133,7 @@ function Layout({children}) {
                 setCursorColor('255, 255, 255'); // White for DVD Logo
                 break;
             default:
-                setCursorColor('123, 12, 23'); // Default color for other pages
+                setCursorColor('256, 256, 256'); // Default color for other pages
         }
     }, [location.pathname]);
 

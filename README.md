@@ -1,70 +1,34 @@
-# Getting Started with Create React App
+<p align="center">
+  <br>
+  <img src="public/person-walking-arrow-loop-left.svg" alt="Project Loading Screen" width="150"/>
+</p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Project Loading Screen 
+## Introduction
+"Project Loading Screen" is a web-based project that offers an endless display of iconic Apple and Windows loading screens. Designed by Shubh Thorat, this project is a unique artistic interpretation of the most familiar wait screens we encounter, intended to mesmerize and engage the audience.
 
-## Available Scripts
+![Project Loading Screen](<URL_to_screenshot_of_the_project>)
 
-In the project directory, you can run:
+## Technology Stack
+- React
+- HTML
+- CSS
+- JavaScript
 
-### `npm start`
+## Features
+- Endless looping of Apple and Windows loading screens
+- Responsive design for compatibility across various devices
+- A creative and artistic take on everyday digital elements
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Usage
+Simply visit the deployed application at [Project Loading Screen](<deployed_application_URL>) and enjoy the seamless display of loading screens.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+![GIF of Application in Use](<URL_to_GIF_of_application_in_use>)ate a new Pull Request)
 
-### `npm test`
+## License
+This project is protected under a custom license. The use, reproduction, modification, or distribution of this project and its code are strictly prohibited without prior written permission from Shubh Thorat. For inquiries regarding the use or distribution of this project, please contact [reapers-arras.0y@icloud.com](mailto:reapers-arras.0y@icloud.com).
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Contact
+Shubh Thorat - [reapers-arras.0y@icloud.com](mailto:reapers-arras.0y@icloud.com)
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Project Link: [https://project-loading-screen.vercel.app/](https://project-loading-screen.vercel.app/)

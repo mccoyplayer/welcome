@@ -270,6 +270,14 @@ body {
     transition: opacity 300ms, transform 300ms;
 }
 
+.custom-cursor-outer {
+    transition: transform 200ms, width 200ms, height 200ms, border-radius 200ms;
+}
+
+.custom-cursor-inner {
+    transition: width 200ms, height 200ms, border-radius 200ms;
+}
+
 @media (max-width: 600px) {
     body {
         overflow: auto;
