@@ -1,0 +1,11 @@
+Custom License for Project Loading Screen
+
+Copyright (c) 2024, Shubh Thorat
+
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without modification, are not permitted without direct permission from the copyright owner.
+
+This project and its contents are proprietary and confidential, intended for use only by Shubh Thorat and those explicitly granted permission by Shubh Thorat.
+
+Unauthorized copying, distribution, modification, public display, or public performance of this material is strictly prohibited. Legal actions will be taken against anyone who violates these terms.

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
 import Home from './pages/Home/Home';
 import Apple from "./pages/Apple/Apple";
@@ -6,8 +6,14 @@ import Windows from "./pages/Windows/Windows";
 import DVD from "./pages/DVD/DVD";
 import NotFoundPage from "./pages/404Page/404Page";
 import Layout from "./pages/Layout/Layout";
+import { inject } from '@vercel/analytics';
 
 function App() {
+    useEffect(() => {
+        // Inject Vercel Analytics
+        inject();
+    }, []);
+
     return (
         <Router>
             <Routes>
