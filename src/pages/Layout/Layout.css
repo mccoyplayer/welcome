@@ -1,3 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+    overflow: hidden;
+}
+
 .layout-background {
     position: relative; /* This creates a new positioning context */
     width: 100vw; /* Full viewport width */

@@ -1,169 +1,169 @@
-body {
-    overflow: hidden;
-}
+/*body {*/
+/*    overflow: hidden;*/
+/*}*/
 
-.home-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: black; /* Gradient background */
-    color: #fff; /* White text color */
-    text-align: center;
-    min-height: 100vh; /* Minimum height to cover the viewport */
-    width: 100vw;
-    position: relative; /* Changed from 'fixed' to 'relative' */
-}
+/*.home-container {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    background: black; !* Gradient background *!*/
+/*    color: #fff; !* White text color *!*/
+/*    text-align: center;*/
+/*    min-height: 100vh; !* Minimum height to cover the viewport *!*/
+/*    width: 100vw;*/
+/*    position: relative; !* Changed from 'fixed' to 'relative' *!*/
+/*}*/
 
-.home-container h1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1vh; /* Space between text and icon */
-    font-size: calc(3vh + 3vw); /* Large, prominent heading */
-    margin-top: 0;
-    margin-bottom: 20px;
-}
+/*.home-container h1 {*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    justify-content: center;*/
+/*    gap: 1vh; !* Space between text and icon *!*/
+/*    font-size: calc(3vh + 3vw); !* Large, prominent heading *!*/
+/*    margin-top: 0;*/
+/*    margin-bottom: 20px;*/
+/*}*/
 
-.home-container p {
-    font-size: calc(1.2vh + 1.2vw);
-    line-height: 1.6;
-    max-width: 90vw; /* Max width for readability */
-    margin-bottom: 10px;
-}
+/*.home-container p {*/
+/*    font-size: calc(1.2vh + 1.2vw);*/
+/*    line-height: 1.6;*/
+/*    max-width: 90vw; !* Max width for readability *!*/
+/*    margin-bottom: 10px;*/
+/*}*/
 
-.home-container p a {
-    color: inherit; /* Inherits the color from the parent element */
-    text-decoration: none; /* Removes the underline */
-    transition: 0.5s ease;
-}
+/*.home-container p a {*/
+/*    color: inherit; !* Inherits the color from the parent element *!*/
+/*    text-decoration: none; !* Removes the underline *!*/
+/*    transition: 0.5s ease;*/
+/*}*/
 
-.home-container p a:hover {
-    text-decoration: underline; /* Optional: underline on hover for better UX */
-    color: gray;
-}
+/*.home-container p a:hover {*/
+/*    text-decoration: underline; !* Optional: underline on hover for better UX *!*/
+/*    color: gray;*/
+/*}*/
 
-/*Social Links*/
-.social-links {
-    display: flex;
-    justify-content: center;
-    gap: 20px; /* Adjust the space between larger icons */
-    margin-top: 20px;
-}
+/*!*Social Links*!*/
+/*.social-links {*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    gap: 20px; !* Adjust the space between larger icons *!*/
+/*    margin-top: 20px;*/
+/*}*/
 
-.social-links a {
-    color: inherit; /* Inherits the text color */
-    transition: color 0.3s ease;
-}
+/*.social-links a {*/
+/*    color: inherit; !* Inherits the text color *!*/
+/*    transition: color 0.3s ease;*/
+/*}*/
 
-/* GitHub: Black hover color */
-.social-links {
-    display: flex;
-    justify-content: center;
-    gap: 8vh; /* Adjust the space between icons */
-    margin-top: 8vh;
-}
+/*!* GitHub: Black hover color *!*/
+/*.social-links {*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    gap: 8vh; !* Adjust the space between icons *!*/
+/*    margin-top: 8vh;*/
+/*}*/
 
-.social-links a {
-    color: inherit; /* Inherits the text color */
-    transition: color 0.3s ease;
-}
+/*.social-links a {*/
+/*    color: inherit; !* Inherits the text color *!*/
+/*    transition: color 0.3s ease;*/
+/*}*/
 
-/* GitHub: Black hover color */
-.social-links a[href*="github.com"]:hover {
-    color: #333;
-}
+/*!* GitHub: Black hover color *!*/
+/*.social-links a[href*="github.com"]:hover {*/
+/*    color: #333;*/
+/*}*/
 
-/* LinkedIn: Blue hover color */
-.social-links a[href*="linkedin.com"]:hover {
-    color: #0077b5;
-}
+/*!* LinkedIn: Blue hover color *!*/
+/*.social-links a[href*="linkedin.com"]:hover {*/
+/*    color: #0077b5;*/
+/*}*/
 
-/* Twitter: Light Blue hover color */
-.social-links a[href*="twitter.com"]:hover {
-    color: #1DA1F2;
-}
+/*!* Twitter: Light Blue hover color *!*/
+/*.social-links a[href*="twitter.com"]:hover {*/
+/*    color: #1DA1F2;*/
+/*}*/
 
-/* Instagram: Purple hover color */
-.social-links a[href*="instagram.com"]:hover {
-    color: #C13584; /* Instagram's brand color */
-}
+/*!* Instagram: Purple hover color *!*/
+/*.social-links a[href*="instagram.com"]:hover {*/
+/*    color: #C13584; !* Instagram's brand color *!*/
+/*}*/
 
-/*Icons*/
-.icon {
-    font-size: 12vh;
-}
+/*!*Icons*!*/
+/*.icon {*/
+/*    font-size: 12vh;*/
+/*}*/
 
-/* For phone screens */
-@media (max-width: 600px) {
-    body {
-        margin: 0;
-        overflow: hidden; /* Prevents scrolling on the entire page */
-    }
+/*!* For phone screens *!*/
+/*@media (max-width: 600px) {*/
+/*    body {*/
+/*        margin: 0;*/
+/*        overflow: hidden; !* Prevents scrolling on the entire page *!*/
+/*    }*/
 
-    .home-container {
-        /* Example: Adjusting padding and font size for smaller screens */
-        font-size: 1.9vh;
-        max-height: 100%;
-        max-width: 100%;
-        overflow: hidden;
-    }
+/*    .home-container {*/
+/*        !* Example: Adjusting padding and font size for smaller screens *!*/
+/*        font-size: 1.9vh;*/
+/*        max-height: 100%;*/
+/*        max-width: 100%;*/
+/*        overflow: hidden;*/
+/*    }*/
 
-    .home-container h1, .home-container p, .platform-icons, .social-links {
-        transform: translate(0%, -5vh);
-    }
+/*    .home-container h1, .home-container p, .platform-icons, .social-links {*/
+/*        transform: translate(0%, -5vh);*/
+/*    }*/
 
-    .home-container h1 {
-        /* Adjust font size and line height */
-        font-size: calc(3.2vh + 3.2vw);
-        line-height: 1.6;
-        margin-top: 0;
-        max-width: 100%;
+/*    .home-container h1 {*/
+/*        !* Adjust font size and line height *!*/
+/*        font-size: calc(3.2vh + 3.2vw);*/
+/*        line-height: 1.6;*/
+/*        margin-top: 0;*/
+/*        max-width: 100%;*/
 
-        /* Custom positioning */
-        position: relative; /* or 'absolute' depending on your needs */
-        transform: translate(0%, -5vh);
-    }
+/*        !* Custom positioning *!*/
+/*        position: relative; !* or 'absolute' depending on your needs *!*/
+/*        transform: translate(0%, -5vh);*/
+/*    }*/
 
-    .home-container p {
-        font-size: 1.2em;
-        max-width: 80%;
-    }
+/*    .home-container p {*/
+/*        font-size: 1.2em;*/
+/*        max-width: 80%;*/
+/*    }*/
 
-    .icon {
-        font-size: 7vh;
-    }
+/*    .icon {*/
+/*        font-size: 7vh;*/
+/*    }*/
 
-    .platform-icons {
-        font-size: 7vh;
-        margin-top: 3vh;
-    }
+/*    .platform-icons {*/
+/*        font-size: 7vh;*/
+/*        margin-top: 3vh;*/
+/*    }*/
 
-    .apple-icon {
-        color: white; /* Apple logo color, change as needed */
-        margin-right: 100px;
-    }
+/*    .apple-icon {*/
+/*        color: white; !* Apple logo color, change as needed *!*/
+/*        margin-right: 100px;*/
+/*    }*/
 
-    .windows-icon {
-        color: rgb(51, 118, 209); /* Apple logo color, change as needed */
-    }
+/*    .windows-icon {*/
+/*        color: rgb(51, 118, 209); !* Apple logo color, change as needed *!*/
+/*    }*/
 
-    .social-links a[href*="github.com"] {
-        color: whitesmoke;
-    }
+/*    .social-links a[href*="github.com"] {*/
+/*        color: whitesmoke;*/
+/*    }*/
 
-    /* LinkedIn: Blue hover color */
-    .social-links a[href*="linkedin.com"] {
-        color: #0077b5;
-    }
+/*    !* LinkedIn: Blue hover color *!*/
+/*    .social-links a[href*="linkedin.com"] {*/
+/*        color: #0077b5;*/
+/*    }*/
 
-    /* Twitter: Light Blue hover color */
-    .social-links a[href*="twitter.com"] {
-        color: #1DA1F2;
-    }
+/*    !* Twitter: Light Blue hover color *!*/
+/*    .social-links a[href*="twitter.com"] {*/
+/*        color: #1DA1F2;*/
+/*    }*/
 
-    /* Instagram: Purple hover color */
-    .social-links a[href*="instagram.com"] {
-        color: #C13584; /* Instagram's brand color */
-    }
-}
+/*    !* Instagram: Purple hover color *!*/
+/*    .social-links a[href*="instagram.com"] {*/
+/*        color: #C13584; !* Instagram's brand color *!*/
+/*    }*/
+/*}*/

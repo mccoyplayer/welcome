@@ -14,6 +14,29 @@ function App() {
         inject();
     }, []);
 
+    useEffect(() => {
+        // Function to set dark mode based on system preference
+        const setDarkMode = (prefersDarkMode) => {
+            document.documentElement.classList.toggle('dark', prefersDarkMode);
+        };
+
+        // Check if dark mode is initially preferred
+        const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        setDarkMode(prefersDarkMode);
+
+        // Watch for changes in dark mode preference
+        const darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+        const handleDarkModeChange = (e) => {
+            setDarkMode(e.matches);
+        };
+        darkModeMediaQuery.addEventListener('change', handleDarkModeChange);
+
+        // Cleanup
+        return () => {
+            darkModeMediaQuery.removeEventListener('change', handleDarkModeChange);
+        };
+    }, []);
+
     return (
         <Router>
             <Routes>

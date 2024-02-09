@@ -17,10 +17,15 @@ function Home() {
     }, []);
 
     return (
-        <div className="home-container">
-            <h1 style={{marginBottom: "0"}}>Welcome</h1>
-            <h1>To The <FaPersonWalkingArrowLoopLeft/> Project</h1>
-            <p>
+        <div
+            className="flex flex-col justify-center items-center bg-black text-white text-center min-h-screen w-full relative">
+            <div className="flex flex-col items-center justify-center mt-0 mb-5">
+                <h1 className="text-[calc(3vh+3vw)] font-bold">Welcome</h1>
+                <h1 className="text-[calc(3vh+3vw)] font-bold flex items-center justify-center gap-x-1">
+                    To The <FaPersonWalkingArrowLoopLeft/> Project
+                </h1>
+            </div>
+            <p className="text-[calc(1.2vh+1.2vw)] leading-relaxed max-w-[85vw] my-4">
                 Dive into an array of endless loading screens. Sit back, relax, and enjoy the hypnotic visuals.
                 {!isMobile && (
                     <> {/* React Fragment */}
@@ -28,42 +33,43 @@ function Home() {
                     </>
                 )}
             </p>
-            <p>
+            <p className="text-[calc(1.2vh+1.2vw)] leading-relaxed max-w-[85vw] my-4">
                 <strong>Note:</strong> Fullscreen mode is optimized for the loading screens and may not function on this
                 page.
             </p>
-            <p>
+            <p className="text-[calc(1.2vh+1.2vw)] leading-6 max-w-[90vw] mb-2.5">
                 This creative side project was crafted by <a href="https://www.linkedin.com/in/shubhthorat/"
-                                                             target="_blank"
-                                                             rel="noopener noreferrer"><strong>Shubh
+                                                             target="_blank" rel="noopener noreferrer"
+                                                             className="text-current no-underline transition duration-500 ease-in-out hover:underline hover:text-gray-400"><strong>Shubh
                 Thorat</strong></a> for fun. Enjoy the experience!
             </p>
 
             {isMobile && (
-                <div className="platform-icons">
+                <div className="flex justify-center gap-x-5 mt-5">
                     <NavLink to="/apple" className="mobile-icon-link">
-                        <FaApple className="mobile-icon apple-icon"/>
+                        <FaApple className="text-3xl"/>
                     </NavLink>
                     <NavLink to="/windows" className="mobile-icon-link">
-                        <FaWindows className="mobile-icon windows-icon"/>
+                        <FaWindows className="text-3xl"/>
                     </NavLink>
                 </div>
             )}
-            <p style={{marginTop: "3vh", marginBottom: "1vh", fontWeight: "Bold"}}>
+            <p className="mt-8 mb-2.5 font-bold">
                 {isMobile ? 'Connect with me here:' : ''}
             </p>
 
-            <div style={{marginTop: "1vh"}} className="social-links">
-                <a href="https://github.com/itsjustshubh" target="_blank" rel="noopener noreferrer" title="GitHub">
-                    <FaGithub className="icon"/>
+            <div className="flex justify-center gap-x-20 mt-8">
+                <a href="https://github.com/itsjustshubh" target="_blank" rel="noopener noreferrer" title="GitHub"
+                   className="text-current transition-colors duration-300 hover:text-gray-800">
+                    <FaGithub className="text-7xl"/>
                 </a>
                 <a href="https://www.linkedin.com/in/shubhthorat/" target="_blank" rel="noopener noreferrer"
-                   title="LinkedIn">
-                    <FaLinkedin className="icon"/>
+                   title="LinkedIn" className="text-current transition-colors duration-300 hover:text-[#0077b5]">
+                    <FaLinkedin className="text-7xl"/>
                 </a>
                 <a href="https://instagram.com/_itsjustshubh" target="_blank" rel="noopener noreferrer"
-                   title="Instagram">
-                    <FaInstagram className="icon"/>
+                   title="Instagram" className="text-current transition-colors duration-300 hover:text-pink-600">
+                    <FaInstagram className="text-7xl"/>
                 </a>
             </div>
         </div>
